@@ -1,0 +1,59 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FDFDFD; /* Soft ivory background for readability:contentReference[oaicite:7]{index=7} */
+  color: #000;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Navigation bar at top */
+nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+nav ul {
+  margin: 0; padding: 0;
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #0055A4; /* Scholarly blue accent */
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Headings in blue accent for consistency */
+h1, h2, h3 {
+  color: #0055A4;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 2rem 0;
+}
+
+/* Utility */
+a {
+  color: #0055A4;
+}
+a:hover {
+  text-decoration: underline;
+}
