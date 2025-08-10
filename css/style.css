@@ -1,59 +1,83 @@
-/* Base styles */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #FDFDFD; /* Soft ivory background for readability:contentReference[oaicite:7]{index=7} */
-  color: #000;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #000;
 }
 
+.container {
+    display: flex;
+}
+
+/* 左侧栏 */
+.sidebar {
+    background-color: #ffffff;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    height: 100%;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.sidebar h2 {
+    margin: 10px 0;
+    color: #0055A4;
+}
+
+.sidebar a {
+    color: #0055A4;
+    text-decoration: none;
+}
+
+.sidebar .icons a {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #0055A4;
+}
+
+/* 右侧内容区 */
 .content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
 }
 
-/* Navigation bar at top */
-nav {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-}
-nav ul {
-  margin: 0; padding: 0;
-  list-style: none;
-  text-align: center;
-}
-nav li {
-  display: inline;
-  margin: 0 1rem;
-}
-nav a {
-  text-decoration: none;
-  color: #0055A4; /* Scholarly blue accent */
-  font-weight: bold;
-}
-nav a:hover {
-  text-decoration: underline;
+/* 顶部导航 */
+.top-nav {
+    background-color: #ffffff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
 }
 
-/* Headings in blue accent for consistency */
-h1, h2, h3 {
-  color: #0055A4;
+.top-nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0055A4;
+    font-weight: bold;
 }
 
-/* Footer styling */
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin: 2rem 0;
+.top-nav a:hover {
+    text-decoration: underline;
 }
 
-/* Utility */
-a {
-  color: #0055A4;
+/* 栏目样式 */
+section {
+    padding: 40px 0;
 }
-a:hover {
-  text-decoration: underline;
+
+section h1 {
+    color: #0055A4;
+    margin-bottom: 15px;
 }
