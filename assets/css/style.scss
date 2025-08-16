@@ -33,6 +33,16 @@ body {
   font-family:  "Montserrat", sans-serif, "Arial"; // 整栏字体
 }
 
+// ...existing code...
+.tagline {
+  margin: 0;            /* 去掉默认上下外边距 */
+  margin-bottom: 0.25rem; /* 两行之间的距离，按需调整 */
+  line-height: 1.25;    /* 行内行高，按需调整（例如 1.1 ~ 1.5） */
+  font-size: 0.95rem;   /* 可选：调整文字大小 */
+  color: #444;          /* 可选：文字颜色 */
+}
+
+
 /* 关键词样式 */
 /* 关键词样式，每个词占一行，左对齐，和姓名留间距 */
 .sidebar {
@@ -49,19 +59,69 @@ body {
   overflow-y: auto;     // 左侧内容多时可滚动
 }
 
-.sidebar .keywords p {
+.sidebar .tagline + .research_interests {
+  margin-top: 3rem; /* 需要更紧就减小，放大就增加 */
+}
+
+.sidebar .research_interests p {
   margin: 4px 0;         // 每行关键词上下间距
   font-size: 1.1rem;     // 可调节大小
-  color: rgb(60, 58, 58);       // 学术蓝
+  color: rgb(26, 26, 26);       // 学术蓝
   line-height: 1.4;
   text-align: left;      // 左对齐
   margin-left: 25px;    // 给左侧栏留出空间
 }
 
+.sidebar .keywords p {
+  position: relative;
+  padding-left: 1.1rem;  /* 给小圆点留空间 */
+  margin: 4px 0;         // 每行关键词上下间距
+  font-size: 0.95rem;     // 可调节大小
+  color: rgb(67, 64, 64);       // 学术蓝
+  line-height: 1.4;
+  text-align: left;      // 左对齐
+  margin-left: 25px;    // 给左侧栏留出空间
+}
+
+.sidebar .keywords p::before {
+  content: '';
+  position: absolute;
+  left: 0.3rem;          /* 小圆点相对于关键文字的水平位置 */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.45rem;
+  height: 0.45rem;
+  background: rgb(60, 58, 58);  /* 使用主题色，可改为其它颜色 */
+  border-radius: 50%;
+}
+
+.sidebar .keywords + .email {
+  margin-top: 3rem; /* 需要更紧就减小，放大就增加 */
+}
+
+.sidebar .email p {
+  margin: 4px 0  0rem;         // 每行关键词上下间距
+  font-size: 1.1rem;     // 可调节大小
+  color: rgb(26, 26, 26);       // 学术蓝
+  line-height: 1.4;
+  text-align: left;      // 左对齐
+  margin-left: 25px;    // 给左侧栏留出空间
+}
+
+.sidebar .email + p {
+  margin-top: 0.15rem;   /* 上外边距，按需调整（0 ~ 0.6rem） */
+  margin-left: 25px;     /* 保持与其它条目一致的缩进 */
+}
+
 /* 邮箱颜色 */
 .sidebar p a {
-  color: $primary;         // 学术蓝
+  color: rgb(60, 58, 58);         // 学术蓝
   text-decoration: none;
+  font-size: 0.95rem;     // 可调节大小
+  line-height: 1.4;
+  text-align: left;      // 左对齐
+  margin-left: 25px;    // 给左侧栏留出空间
+  margin: 4px 0;         // 每行关键词上下间距
 }
 .sidebar p a:hover {
   text-decoration: underline;
@@ -70,7 +130,7 @@ body {
 /* 社交图标 */
 .social-icons a {
   color: $primary;         // 图标颜色
-  font-size: 1.2rem;       // 图标大小
+  font-size: 4rem;       // 图标大小
   margin: 0 5px;
 }
 .social-icons a:hover {
