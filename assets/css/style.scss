@@ -1,0 +1,174 @@
+---
+---
+
+@use "sass:color";
+
+$primary: #1e4e8c;   // 学术蓝
+$bg: #f5f5f5;
+$text: #222;
+
+body {
+  margin: 0;
+  padding: 0;       // 可选，确保没有内边距
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: $bg;
+  color: $text;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+
+/* 左侧栏 */
+.sidebar {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+  text-align: center;
+  font-family:  "Montserrat", sans-serif, "Arial"; // 整栏字体
+}
+
+/* 关键词样式 */
+/* 关键词样式，每个词占一行，左对齐，和姓名留间距 */
+.sidebar {
+  width: 250px;
+  background: rgb(243, 243, 243);
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+  text-align: center;
+
+  position: fixed;      // 固定位置
+  top: 0;               // 顶部对齐
+  left: 0;              // 左侧对齐
+  height: 100vh;        // 高度占满整个视口
+  overflow-y: auto;     // 左侧内容多时可滚动
+}
+
+.sidebar .keywords p {
+  margin: 4px 0;         // 每行关键词上下间距
+  font-size: 1.1rem;     // 可调节大小
+  color: rgb(60, 58, 58);       // 学术蓝
+  line-height: 1.4;
+  text-align: left;      // 左对齐
+  margin-left: 25px;    // 给左侧栏留出空间
+}
+
+/* 邮箱颜色 */
+.sidebar p a {
+  color: $primary;         // 学术蓝
+  text-decoration: none;
+}
+.sidebar p a:hover {
+  text-decoration: underline;
+}
+
+/* 社交图标 */
+.social-icons a {
+  color: $primary;         // 图标颜色
+  font-size: 1.2rem;       // 图标大小
+  margin: 0 5px;
+}
+.social-icons a:hover {
+  color: color.adjust($primary, $lightness: -20%); // 悬停颜色加深
+}
+
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 10%; // 水平居中，垂直向上偏移 30%
+}
+
+.sidebar h1 {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: #222222;
+}
+
+.social-icons {
+  margin-top: 10px;
+  a {
+    margin: 0 8px;
+    text-decoration: none;
+    i {
+      font-size: 1.5rem;
+      color: $primary;
+      transition: color 0.3s;
+    }
+    &:hover i {
+      color: color.adjust($primary, $lightness: -10%);
+    }
+  }
+}
+
+
+
+/* 右侧内容 */
+.main-content {
+  flex: 1;
+  margin-left: 300px;    // 给左侧栏留出空间
+  padding: 70px 30px 30px 30px;  // 顶部 padding 留出导航栏高度
+  overflow-y: auto;
+}
+
+
+
+
+/* 导航栏 */
+/* 导航栏容器 */
+.navbar {
+  display: flex;
+  gap: 20px;
+  position: fixed;       // 改为 fixed
+  top: 0;                // 距离浏览器顶部 0
+  left: 300px;           // 给左侧栏宽度留出空间
+  right: 0;              // 右侧延伸到页面右边
+  padding: 10px 20px;
+  border: 2px solid color.adjust($primary, $lightness: 80%);
+  border-radius: 8px;
+  background-color: color.adjust($primary, $lightness: 70%);
+  z-index: 100;          // 保证覆盖右侧内容
+}
+
+
+/* 每个导航项 */
+.navbar a {
+  color: #969c9f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;            // 字体变大
+  padding: 8px 65px;            // 上下8px，左右16px
+  border-radius: 4px;           // 每个文字小圆角
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 鼠标悬停效果 */
+.navbar a:hover {
+  background-color: #e0e0e0;    // 灰色背景
+  color: $text;                 // 悬停文字颜色
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* 每个栏目 */
+section {
+  scroll-margin-top: 90px;  // 留出导航栏高度，防止遮挡
+  margin-bottom: 50px;
+}
+
+
+section h2 {
+  color: $primary;
+  border-left: 4px solid $primary;
+  padding-left: 8px;
+  margin-bottom: 15px;
+}

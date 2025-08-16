@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- Font Awesome 图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <!-- 左侧个人信息栏 -->
+    <aside class="sidebar">
+      <img src="{{ '/assets/images/myphoto.jpg' | relative_url }}" alt="Profile" class="profile-pic">
+      <h1>{{ site.title }}</h1>
+
+      <!-- 添加关键词 -->
+      <div class="keywords">
+        <p>HRI</p>
+        <p>Robot teleoperation</p>
+        <p>Exoskeleton</p>
+      </div>
+
+      <p><a href="mailto:ruohanwang@zju.edu.cn">ruohanwang@zju.edu.cn</a></p>
+      <div class="social-icons">
+        <a href="https://github.com/Wang-Ruohan" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.researchgate.net/" target="_blank">
+          <i class="fab fa-researchgate"></i>
+        </a>
+      </div>
+    </aside>
+
+    <!-- 右侧主要内容 -->
+    <main class="main-content">
+      <!-- 顶部导航 -->
+      <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
+        <a href="#projects">Projects</a>
+        <a href="#talks">Talks</a>
+      </nav>
+
+      <!-- 栏目内容 -->
+      <section id="about">
+        {{ page.content }}
+      </section>
+
+    </main>
+  </div>
+</body>
+
+</html>
