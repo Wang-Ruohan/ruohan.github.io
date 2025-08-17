@@ -21,7 +21,7 @@
 title: "Ruohan Wang"
 email: ruohanwang@zju.edu.cn
 description: "Academic Homepage"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ruohan.github.io" # the subpath of your site, e.g. /blog
 url: "https://ruohan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
