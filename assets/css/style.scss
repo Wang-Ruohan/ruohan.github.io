@@ -1,7 +1,7 @@
 ---
 ---
 
-@use "sass:color";
+/* @use "sass:color";  已移除，兼容 GitHub Pages 的旧 Sass */
 
 $primary: #1e4e8c;   // 学术蓝
 $bg: #f5f5f5;
@@ -134,9 +134,8 @@ body {
   margin: 0 5px;
 }
 .social-icons a:hover {
-  color: color.adjust($primary, $lightness: -20%); // 悬停颜色加深
+  color: adjust-color($primary, $lightness: -20%); // 悬停颜色加深（已替换）
 }
-
 
 .profile-pic {
   width: 200px;
@@ -163,7 +162,7 @@ body {
       transition: color 0.3s;
     }
     &:hover i {
-      color: color.adjust($primary, $lightness: -10%);
+      color: adjust-color($primary, $lightness: -10%); // 已替换
     }
   }
 }
@@ -191,9 +190,9 @@ body {
   left: 300px;           // 给左侧栏宽度留出空间
   right: 0;              // 右侧延伸到页面右边
   padding: 10px 20px;
-  border: 2px solid color.adjust($primary, $lightness: 80%);
+  border: 2px solid adjust-color($primary, $lightness: 80%); /* 已替换 */
   border-radius: 8px;
-  background-color: color.adjust($primary, $lightness: 70%);
+  background-color: adjust-color($primary, $lightness: 70%); /* 已替换 */
   z-index: 100;          // 保证覆盖右侧内容
 }
 
