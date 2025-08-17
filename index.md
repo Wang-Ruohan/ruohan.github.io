@@ -6,12 +6,12 @@ title: "Ruohan Wang"
 <section id="about">
   <h2>About Me</h2>
   <p>
-    I am <b>Ruohan Wang</b>, a researcher in robotics with a focus on
-    <i>teleoperation</i>, <i>human-robot interaction</i>, and 
-    <i>task-adaptive grasping</i>.  
-    My research aims to design intelligent robotic systems that can 
-    safely collaborate with humans in dynamic and unstructured environments.  
+    Hello, I'm <b>Ruohan</b>.
   </p>
+  <p>
+    I'm currently pursuing my Ph.D. in Mechatronic Engineering at Zhejiang University in Hangzhou, China, under the supervision of Prof. Geng Yang.
+  </p>
+
   <p>
     Currently, I am exploring <b>exoskeleton-based teleoperation</b> to enhance 
     the safety and intuitiveness of assistive robots in homecare.  
