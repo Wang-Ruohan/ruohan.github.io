@@ -31,6 +31,10 @@ theme: null
 plugins:
   - jekyll-feed
 
+# _config.yml
+sass:
+  style: compressed   # 可选，生成压缩后的 CSS
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
