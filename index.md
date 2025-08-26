@@ -5,16 +5,14 @@ title: "Ruohan Wang"
 
 <section id="about">
   <h2>About Me</h2>
-  <p>
+  <p style="font-size: 18px; line-height: 1;">
     Hello, I'm <b>Ruohan</b>.
   </p>
-  <p>
+  <p style="font-size: 18px; line-height: 1;">
     I'm currently pursuing my Ph.D. in Mechatronic Engineering at Zhejiang University in Hangzhou, China, under the supervision of Prof. Geng Yang.
   </p>
-
-  <p>
-    Currently, I am exploring <b>exoskeleton-based teleoperation</b> to enhance 
-    the safety and intuitiveness of assistive robots in homecare.  
+  <p style="font-size: 18px; line-height: 1;">
+    My research interests center on <b>Safety in Human–Robot Interaction</b>, <b>Robot Teleoperation</b>, <b>Shared Control</b>, and <b>Wearable Exoskeleton</b>. I aim to build intuitive and safe robotic systems that seamlessly collaborate with humans.
   </p>
 </section>
 
@@ -28,24 +26,95 @@ title: "Ruohan Wang"
   </ul>
 </section>
 
+<style>
+/* 去掉有序列表默认编号，只显示手动 [1], [2], … */
+#publications ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* 段落间距和行高，保证可读性 */
+#publications li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  padding-left: 30px;      /* 缩进整个段落 */
+  text-indent: -20px;      /* 悬挂缩进，使 [1] 在左侧 */
+  font-size: 18px;
+}
+
+</style>
+
 <section id="publications">
   <h2>Publications</h2>
+
+  <h3>Journal</h3>
   <ol>
-    <li>
-      <b>Wang, R.</b>, et al. 
-      <i>Advancing robot interaction safety in tele-homecare: 
-      A teleoperation shared control approach using a wearable exoskeleton</i>. 2025.
+    <li>[1] <b>Ruohan Wang</b>, Honghao Lyu, Zhengjie Zhu, et.al., 
+        Safety-Aware Shared Control for Teleoperated Robotic Precision Tasks under Dynamic Interference, <i>IEEE Robotics and Automation Letters</i>, vol. 10, no. 9, pp. 9328-9335, 2025. <a href="https://ieeexplore.ieee.org/document/11091461" target="_blank" style="color: rgba(74, 152, 230, 1); font-weight: bold;">[Whole paper]</a>
+
     </li>
-    <li>
-      <b>Wang, R.</b>, et al. 
-      <i>Task-adaptive grasping with dual-arm anthropomorphic robots in unstructured environments</i>. 2024.
+    <li>[2] <b>Ruohan Wang</b>, Ying Yang, ZhengJie Zhu, et. al., 
+        A Proactive Safety Architecture Based on Proximity Sensing for Enhanced Human-Robot Interaction in Tele-Homecare, Submit to <i>IEEE Transactions on Human-Machine Systems</i>, In press, 2025.
     </li>
-    <li>
-      <b>Wang, R.</b>, et al. 
-      <i>Vision-based recognition and task planning for robot-assisted caregiving</i>. 2023.
+    <li>[3] <b>Ruohan Wang</b>, Chen Li, Honghao Lv, Gaoyang Pang, Haiteng Wu, and Geng Yang, 
+        "A Smooth Velocity Transition Framework Based on Hierarchical Proximity Sensing for Safe Human-Robot Interaction," <i>IEEE Robotics and Automation Letters</i>, vol. 9, no. 6, pp. 4910-4917, 2024.
+    </li>
+    <li>[4] <b>Ruohan Wang†</b>, Honghao Lv†, Zhangli Lu, Xiaoyan Huang, Haiteng Wu, Junjie Xiong, Geng Yang*, 
+        “A medical assistive robot for tele-healthcare during the COVID-19 pandemic: development and usability study in an isolation ward,” <i>JMIR Human Factors</i>, vol. 10, art. no. e42870, Jan. 2023.
+    </li>
+    <li>[5] Yuyao Lu†, Depeng Kong†, Geng Yang*, <b>Ruohan Wang</b>, Gaoyang Pang, Huayu Luo, Huayong Yang, Kaichen Xu*, 
+        “Machine Learning-Enabled Tactile Sensor Design for Dynamic Touch Decoding,” <i>Advanced Science</i>, 2023: 2303949.
+    </li>
+    <li>[6] Huiying Zhou, Honghao Lv, <b>Ruohan Wang</b>, Haiteng Wu, Geng Yang*, 
+        “Revitalizing Human-Robot Interaction: Phygital Twin Driven Robot Avatar for China–Sweden Teleoperation,” <i>Chinese Journal of Mechanical Engineering</i>, 36, 124 (2023).
+    </li>
+    <li>[7] Huiying Zhou, Geng Yang, Baicun Wang*, Lingyu Li, <b>Ruohan Wang</b>, Xiaoyan Huang, Haiteng Wu, and Xi Vincent Wang, 
+        “An attention-based deep learning approach for inertial motion recognition and estimation in human-robot collaboration,” <i>Journal of Manufacturing Systems</i>, Volume 67, Pages 97-110, DOI: 10.1016/j.jmsy.2023.01.007, Apr. 2023.
+    </li>
+    <li>[8] Geng Yang, Zhiqiu Ye, Haiteng Wu, Chen Li, <b>Ruohan Wang</b>, Depeng Kong, Zeyang Hou, Huafen Wang, Xiaoyan Huang, Zhibo Pang, Na Dong, and Gaoyang Pang*, 
+        “A Digital Twin Based Large-Area Robot Skin System for Safer Human-Centered Healthcare Robots Toward Healthcare 4.0,” <i>IEEE Transactions on Medical Robotics and Bionics</i>, vol. 6, no. 3, pp. 1104–1115, 2024.
+    </li>
+    <li>[9] Kaichen Xu, Qi’ao Li, Yuyao Lu, Huayu Luo, Yihui Jian, Dingwei Li, Depeng Kong, <b>Ruohan Wang</b>, Jibing Tan, Zimo Cai, Geng Yang, Bowen Zhu, Qingqing Ye, Huayong Yang, and Tiefeng Li, 
+        “Laser Direct Writing of Flexible Thermal Flow Sensors,” <i>Nano Letters</i>, pp. 10317-10325, 2023.
+    </li>
+  </ol>
+
+  <h3>Conference</h3>
+  <ol>
+    <li>[1] <b>Ruohan Wang</b>, Guangwei Zhang, Zhengjie Zhu, et.al., 
+        Advancing Robot Interaction Safety: A Teleoperated Shared-Control Approach Using a Lightweight Force-Feedback Exoskeleton, <i>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</i>, In press, 2025.
+    </li>
+    <li>[2] <b>Ruohan Wang</b>, Xi Cui, Honghao Lv, Guangyao Zhang, Haiteng Wu, and Geng Yang, 
+        “Enable Intuitive and Immersive Teleoperation: Design, Modeling and Control of a Novel Wearable Exoskeleton,” <i>ICIRA</i>.
+    </li>
+    <li>[3] <b>Ruohan Wang</b>, et al., 
+        “Towards Immersive Teleoperation: Dynamic Identification for Force Feedback of a Wearable Exoskeleton,” Recently accepted in <i>ASIAN MMS 2024</i>.
+    </li>
+    <li>[4] Guangwei Zhang, <b>Ruohan Wang</b>, Mengke Wang, Honghao Lyu*, Dapeng Lan, Dashun Zhang, and Geng Yang, 
+        “Wearable Exoskeleton-Based Immersive Teleoperation for Industrial Manufacturing Systems: Hardware Design and Verification,” in the 23rd <i>IEEE International Conference on Industrial Informatics (INDIN 2025)</i>, Kunming, China, 12-15 July, 2025.
+    </li>
+    <li>[5] Guangwei Zhang, <b>Ruohan Wang</b>, Honghao Lv, et. al., 
+        Design and Control of a Wearable Upper-Limb Exoskeleton Featuring Force Feedback for Teleoperation, Recently accepted in <i>ICIRA 2024</i>.
+    </li>
+    <li>[6] Ying Yang, Chen Li, <b>Ruohan Wang</b>, et. al., 
+        Design of Highly Integrated Microscale Fingertip Tactile Sensor for Robot Dexterous Hand, Recently accepted in <i>ICIRA 2024</i>.
+    </li>
+    <li>[7] Lei Wang, <b>Ruohan Wang</b>, Honghao Lv, et. al., 
+        Liberating Humanity from Heavy Labor: Dual-Arm Coordination and Teleoperation Control for an Assistive Robot, <i>IEEE International Symposium on Industrial Electronics</i>, 2024.
+    </li>
+    <li>[8] Mengke Wang, Honghao Lv, <b>Ruohan Wang</b>, et. al., 
+        Enhancing Robot Teleoperation in Remote Automation Production through an Event-Triggered Control Strategy, <i>IEEE International Symposium on Industrial Electronics</i>, 2024.
+    </li>
+    <li>[9] Honghao Lv, Huiying Zhou, <b>Ruohan Wang</b>, Haiteng Wu, Zhibo Pang, and Geng Yang, 
+        “Towards Intercontinental Teleoperation: A Cloud-Based Framework for Ultra-Remote Human-Robot Dual-Arm Motion Mapping,” <i>ICIRA</i>.
+    </li>
+    <li>[10] Longqiang Wang, <b>Ruohan Wang</b>, Haiteng Wu, and Geng Yang, 
+        “Keeping Workers Safe in Electric Working: A Robot System for High-Voltage Live Operation,” <i>ICIT</i>.
     </li>
   </ol>
 </section>
+
 
 <section id="cv">
   <h2>Curriculum Vitae</h2>
