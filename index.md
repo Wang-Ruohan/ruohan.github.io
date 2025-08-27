@@ -3,30 +3,26 @@ layout: default
 title: "Ruohan Wang"
 ---
 
-<section id="about">
-  <h2>About Me</h2>
-  <p style="font-size: 18px; line-height: 1;">
-    Hello, I'm <b>Ruohan</b>.
-  </p>
-  <p style="font-size: 18px; line-height: 1;">
-    I'm currently pursuing my Ph.D. in Mechatronic Engineering at Zhejiang University in Hangzhou, China, under the supervision of Prof. Geng Yang.
-  </p>
-  <p style="font-size: 18px; line-height: 1;">
-    My research interests center on <b>Safety in Human–Robot Interaction</b>, <b>Robot Teleoperation</b>, <b>Shared Control</b>, and <b>Wearable Exoskeleton</b>. I aim to build intuitive and safe robotic systems that seamlessly collaborate with humans.
-  </p>
-</section>
-
-<section id="news">
-  <h2>News</h2>
-  <ul>
-    <li><b>2025-08</b>: Paper accepted at <i>ICRA 2025</i> on shared control for tele-homecare robots.</li>
-    <li><b>2025-07</b>: Invited talk on exoskeleton-based teleoperation at International Robotics Symposium.</li>
-    <li><b>2025-05</b>: Our dual-arm grasping project received funding support.</li>
-    <li><b>2025-03</b>: Started a collaboration on robot-assisted healthcare with XYZ Lab.</li>
-  </ul>
-</section>
 
 <style>
+
+/* 去掉有序列表默认编号，只显示手动 [1], [2], … */
+#news ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* 段落间距和行高，保证可读性 */
+#news li {
+  margin-bottom: 15px;
+  line-height: 1.0;
+  padding-left: 30px;      /* 缩进整个段落 */
+  text-indent: -20px;      /* 悬挂缩进，使 [1] 在左侧 */
+  font-size: 18px;
+  text-align: justify;     /* 两端对齐 */
+}
+
 /* 去掉有序列表默认编号，只显示手动 [1], [2], … */
 #publications ol {
   list-style: none;
@@ -41,6 +37,7 @@ title: "Ruohan Wang"
   padding-left: 30px;      /* 缩进整个段落 */
   text-indent: -20px;      /* 悬挂缩进，使 [1] 在左侧 */
   font-size: 18px;
+  text-align: justify;     /* 两端对齐 */
 }
 
 
@@ -54,13 +51,95 @@ title: "Ruohan Wang"
 /* 段落间距和行高，保证可读性 */
 #cv li {
   margin-bottom: 15px;
-  line-height: 1.6;
+  line-height: 1.0;
   padding-left: 30px;      /* 缩进整个段落 */
   text-indent: -20px;      /* 悬挂缩进，使 [1] 在左侧 */
   font-size: 18px;
 }
 
+#projects ol {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#projects li {
+  margin-bottom: 15px;
+  line-height: 1.1;
+  padding-left: 20px;      /* 缩进整个段落 */
+  text-indent: 0px;      /* 悬挂缩进，使 [1] 在左侧 */
+  font-size: 18px;
+  text-align: justify;     /* 两端对齐 */
+}
+
+
 </style>
+
+
+<section id="about">
+  <h2>About Me</h2>
+  <p style="font-size: 18px; line-height: 1;">
+    Hello, I'm Ruohan.
+  </p>
+  <p style="font-size: 18px; line-height: 1.2;">
+    I'm currently pursuing my Ph.D. in <a href="http://www.fsie-zju.com/" target="_blank" style="color: rgba(0, 0, 0, 1); font-weight: bold;font-family: 'Georgia'">FSII</a>, the Laboratory of Flexible Sensors and Intelligent Interaction Mechatronic Engineering at Zhejiang University Hangzhou, China, under the supervision of <a href="https://person.zju.edu.cn/gengy" target="_blank" style="color: rgba(0, 0, 0, 1); font-weight: bold;font-family: 'Georgia'">Prof. Geng Yang</a>.
+  </p>
+  <p style="font-size: 18px; line-height: 1.2;">
+    My research interests center on <span class="emphasis">Safety in Human–Robot Interaction</span>, <span class="emphasis">Robot Teleoperation</span>, <span class="emphasis">Shared Control</span>, and <span class="emphasis">Wearable Exoskeleton</span>. I aim to build intuitive and safe robotic systems that seamlessly collaborate with humans.
+  </p>
+</section>
+
+<section id="news">
+  <h2>News</h2>
+  <ul id="news-list">
+    <li><span class="emphasis">2025-07</span>: Our paper has recevied <span class="emphasis"> IEEE IES Students & Young Professionals Assistance Awrad</span> in <a href="https://indin2025.ieee-ies.org/#/home" style="color: rgba(74, 152, 230, 1); font-weight: bold;font-family: 'Georgia'" target="_blank">INDIN 2025</a>.</li>
+    <li><span class="emphasis">2025-06</span>: Paper accepted by <a href="https://www.iros25.org/" style="color: rgba(74, 152, 230, 1); font-weight: bold;font-family: 'Georgia'" target="_blank">IROS 2025</a> on robot shared control.</li>
+    <li><span class="emphasis">2024-09</span>: I won the honor of Outstanding Graduate Student in 2023-2024 semester.</li>
+    <li><span class="emphasis">2024-08</span>:  We won the <span class="emphasis"> Second Prize </span> in <i>Mingshi Cup</i>, the 5th Wiener Sensing Technology and Intelligent Application Competition.</li>
+    <li><span class="emphasis">2024-06</span>: Our paper has recevied <span class="emphasis"> IEEE IES Students & Young Professionals Assistance Awrad</span> in <a href="https://ieee-isie-2024.org/" style="color: rgba(74, 152, 230, 1); font-weight: bold;font-family: 'Georgia'" target="_blank">ISIE 2024</a>.</li>
+    <li><span class="emphasis">2024-06</span>:  We won the <span class="emphasis"> First Prize </span> of Hangzhou and Xiamen Region in <i>Huawei Light Chaser</i>, the Embedded Software Design Competition.</li>
+    <li><span class="emphasis">2023-09</span>: I won the honor of Outstanding Graduate Student in 2022-2023 semester.</li>
+    <li><span class="emphasis">2023-08</span>:  We won the <span class="emphasis"> First Prize </span> in <i>Zhaoyi Innovation Cup</i>, the 18th China Postgraduate Electronic Design Competition.</li>
+    <li><span class="emphasis">2023-06</span>:  We won the <span class="emphasis"> First Prize </span> of Hangzhou and Xiamen Region in <i>Huawei Light Chaser</i>, the Embedded Software Design Competition.</li>
+    <li><span class="emphasis">2022-09</span>: I won the honor of Outstanding Graduate Student in 2021-2022 semester.</li>
+    <li><span class="emphasis">2022-09</span>:  I won the <span class="emphasis"> Jiancheng Scholarship </span>of Zhejiang University in 2021-2022 semester.</li>
+    <li><span class="emphasis">2022-08</span>:  We won the <span class="emphasis"> First Prize </span> in <i>Shenhao Cup</i>,  the 4th Graduate Student Robotics Competition.</li>
+    <li><span class="emphasis">2022-08</span>:  We won the <span class="emphasis"> Second Prize </span> in <i>Mingshi Cup</i>, the 3rd Wiener Sensing Technology and Intelligent Application Competition.</li>
+    <li><span class="emphasis">2022-02</span>:  We won the <span class="emphasis"> Sliver Award </span> in the 48th Geneva International Exhibition of Inventions Competition.</li>
+    <li><span class="emphasis">2021-12</span>:  I won the <span class="emphasis"> Huaneng Scholarship </span>of Zhejiang University.</li>
+    <li><span class="emphasis">2021-12</span>:  We won the <span class="emphasis"> Gold Award </span> in <i>Huachen Cup</i>, the 2nd National Machinery Industry Design Innovation Competition.</li>
+    <li id="toggle-news" class="toggle-item">[Show More]</li>
+  </ul>
+</section>
+
+<script>
+  const list = document.getElementById("news-list");
+  const items = list.getElementsByTagName("li");
+  const btn = document.getElementById("toggle-news");
+
+  const maxVisible = 8;
+  let expanded = false;
+
+  // 初始隐藏超过5条，但保留最后的 toggle-item
+  for (let i = maxVisible; i < items.length - 1; i++) {
+    items[i].style.display = "none";
+  }
+
+  btn.addEventListener("click", () => {
+    expanded = !expanded;
+    if (expanded) {
+      for (let i = 0; i < items.length - 1; i++) {
+        items[i].style.display = "list-item";
+      }
+      btn.textContent = "[Show Less]";
+    } else {
+      for (let i = maxVisible; i < items.length - 1; i++) {
+        items[i].style.display = "none";
+      }
+      btn.textContent = "[Show More]";
+    }
+  });
+</script>
 
 <section id="publications">
   <h2>Publications</h2>
@@ -134,42 +213,83 @@ title: "Ruohan Wang"
 <section id="cv">
   <h2>Curriculum Vitae</h2>
   <p>
-    <a href="{{ '/files/RuohanWang_CV_240512.pdf' | relative_url }}" target="_blank">CV (PDF)</a>
+    <ol><li> See <a href="https://wang-ruohan.github.io/ruohan.github.io/files/RuohanWang_CV_240512.pdf" target="_blank">Ruohan-CV240512 (PDF)</a></li></ol>
   </p>
   <h3>Education</h3>
   <ul>
-    <li>Ph.D. in School of Mechanical Engineering, Zhejiang University. <b>[2021-Now]</b></li>
-    <li>B.Eng. in School of Mechanical and Electronic Control Engineering，Beijing Jiaotong University. <b>[2017-2021]</b></li>
-  </ul>
-
-  <h3>Experience</h3>
-  <ul>
-    <li>Research Assistant, [Lab/Institute], focusing on human-robot interaction.</li>
-    <li>Intern, [Company/Institute], developing robotic grasping strategies.</li>
+    <li><span class="emphasis"> <b>2021-Now</b></span>, Ph.D. in School of Mechanical Engineering, Zhejiang University.</li>
+    <li><span class="emphasis"> <b>2017-2021</b></span>, B.Eng. in School of Mechanical and Electronic Control Engineering，Beijing Jiaotong University. </li>
   </ul>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
-  <h3>Teleoperation with Exoskeleton</h3>
-  <p>
-    A shared-control framework for teleoperating assistive robots in homecare scenarios. 
-    This project integrates a wearable exoskeleton with force feedback to ensure 
-    safety and intuitiveness in physical human-robot interaction.
-  </p>
+  <h3>Advancing Teleoperated Robot's Interaction Safety</h3>
+  <ol>
+    <li>This project develops a teleoperated shared-control framework for homecare robots using a lightweight exoskeleton. Operator commands are combined with real-time proximity sensing to avoid collisions, while force feedback allows intuitive perception of contacts. Comparative experiments demonstrate that this strategy effectively enhances safety and reliability in tele-homecare scenarios. <a href="https://" target="_blank" style="color: rgba(74, 152, 230, 1); font-weight: bold;">[PAPER]</a></li>
+    <li> <b>Keywords</b>: Robot Interaction Safety, Teleoperation, Wearable Exoskeleton, Force Feedback, Shared Control</li>
+  </ol>
 
-  <h3>Dual-arm Task-adaptive Grasping</h3>
-  <p>
-    Design and control of an anthropomorphic dual-arm robot capable of 
-    adaptive grasping and manipulation in unstructured environments. 
-    The system integrates vision-based recognition and dynamic task planning.
-  </p>
+  <div class="media-grid">
+    <!-- 视频或图片1 -->
+    <div class="media-item">
+      <video src="videos/IROS2025-video1.mp4" autoplay loop muted playsinline></video>
+      <p class="caption">Exoskeleton for Teleoperation</p>
+    </div>
+    <!-- 视频或图片2 -->
+    <div class="media-item">
+      <video src="videos/IROS2025-video2.mp4" autoplay loop muted playsinline></video>
+      <p class="caption">Robot Shared Control</p>
+    </div>
+    <!-- 视频或图片3 -->
+    <div class="media-item">
+      <video src="videos/IROS2025-video3.mp4" autoplay loop muted playsinline></video>
+      <p class="caption">Robot Shared Control</p>
+    </div>
+  </div>
 
-  <h3>Vision-based Caregiving Assistance</h3>
-  <p>
-    A vision-guided robotic assistant capable of recognizing medical devices 
-    and supporting patients with limited mobility.  
-  </p>
+  <h3>Robot Needle Threading Under Dynamic Interference</h3>
+  <ol>
+    <li>This project develops a safety-aware shared control strategy for teleoperated robotic arms. It combines proximity sensing and force feedback guidance, enabling the robot to anticipate potential collisions, switch to a compliant mode to reduce impact, and maintain precise, stable operation. Experiments show that under dynamic interference, this approach significantly reduces contact force (up to 78.81%) and improves tracking accuracy (up to 66.91%). <a href="https://ieeexplore.ieee.org/document/11091461" target="_blank" style="color: rgba(74, 152, 230, 1); font-weight: bold;">[PAPER1]</a> <a href="https://" target="_blank" style="color: rgba(74, 152, 230, 1); font-weight: bold;">[PAPER2]</a></li>
+    <li> <b>Keywords</b>: Proximity Sensing, Robot Teleoperation, Safety Aware, Shared Control</li>
+  </ol>
+
+  <div class="media-item">
+    <img src="figs/RAL2-fig1.png" alt="Overall Framework" style="width:950px; height:auto;">
+    <p class="caption">Human-Behavior-Inspired Shared Control Strategy</p>
+  </div>
+  <div class="media-grid">
+    <div class="media-item">
+      <video src="videos/RAL2-video1.mp4"
+            autoplay loop muted playsinline
+            style="width:940px; height:auto;"></video>
+      <p class="caption">Needle Threading Under Random Interference</p>
+    </div>
+  </div>
+
+  <h3>Proximity-Sensing Based Safe Human-Robot Interaction</h3>
+  <ol>
+    <li>This project develops a capacitive robot skin integrated with a smooth velocity transition framework to enhance human-robot safety in Industry 5.0. The skin covers a large area of a 6-DOF robot arm and uses a hierarchical proximity sensing method to grade distance and generate smooth collision-avoidance velocities. Tested in a pick-and-place scenario, the approach reduces sudden acceleration compared to traditional threshold methods, enabling safer and more natural human-robot interaction. <a href="https://ieeexplore.ieee.org/document/10493076" target="_blank" style="color: rgba(74, 152, 230, 1); font-weight: bold;">[PAPER]</a></li>
+    <li> <b>Keywords</b>: Human-Robot Interaction, Industry 5.0, Robot Skin, the Safety of Humans, Smooth Velocity Transition Framework.</li>
+  </ol>
+
+  <div class="media-grid">
+    <div class="media-item">
+      <video src="videos/RAL1-video1.mp4"
+            autoplay loop muted playsinline
+            style="width:520px; height:auto;"></video>
+      <p class="caption">Exoskeleton for Teleoperation</p>
+    </div>
+    <div class="media-item">
+      <img src="figs/RAL1-fig1.jpg" alt="Overall Framework" style="width:390px; height:auto;">
+      <p class="caption">Overall Framework</p>
+    </div>
+    <div class="media-item">
+      <img src="figs/RAL1-fig2.jpg" alt="Overall Framework" style="width:400px; height:auto;">
+      <p class="caption">Capacitive Sensor</p>
+    </div>
+  </div>
+
 </section>
 
 

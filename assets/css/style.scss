@@ -13,6 +13,8 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   background: $bg;
   color: $text;
+  padding-left: 80px;  /* 可选，右侧留白 */
+  padding-right: 80px;  /* 可选，右侧留白 */
 }
 
 .container {
@@ -20,7 +22,13 @@ body {
   min-height: 100vh;
 }
 
-
+.emphasis {
+  font-family: 'Georgia', cursive;
+  font-size: 1.0em;
+  font-weight: bold;
+  color: inherit; /* 继承文字颜色，必要时改成具体颜色 */
+  margin-right: 0.25rem;
+}
 
 
 /* 左侧栏 */
@@ -46,7 +54,7 @@ body {
 /* 关键词样式 */
 /* 关键词样式，每个词占一行，左对齐，和姓名留间距 */
 .sidebar {
-  width: 250px;
+  width: 290px;
   background: rgb(243, 243, 243);
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0,0,0,0.05);
@@ -54,9 +62,10 @@ body {
 
   position: fixed;      /* 固定位置*/
   top: 0;                /* 顶部对齐*/
-  left: 0;               /* 左侧对齐*/
+  left: 0px;               /* 左侧对齐*/
   height: 100vh;         /* 高度占满整个视口*/
   overflow-y: auto;      /* 左侧内容多时可滚动*/
+  
 }
 
 .sidebar .tagline + .research_interests {
@@ -69,7 +78,7 @@ body {
   color: rgb(26, 26, 26);       /* 学术蓝*/
   line-height: 1.4;
   text-align: left;      /* 左对齐*/
-  margin-left: 25px;    /* 给左侧栏留出空间*/
+  margin-left: 40px;    /* 给左侧栏留出空间*/
 }
 
 .sidebar .keywords p {
@@ -80,7 +89,7 @@ body {
   color: rgb(67, 64, 64);       /*学术蓝*/
   line-height: 1.4;
   text-align: left;      /* 左对齐*/
-  margin-left: 25px;    /* 给左侧栏留出空间*/
+  margin-left: 40px;    /* 给左侧栏留出空间*/
 }
 
 .sidebar .keywords p::before {
@@ -105,12 +114,12 @@ body {
   color: rgb(26, 26, 26);       /* 学术蓝*/
   line-height: 1.4;
   text-align: left;      /* 左对齐*/
-  margin-left: 25px;    /* 给左侧栏留出空间*/
+  margin-left:40px;    /* 给左侧栏留出空间*/
 }
 
 .sidebar .email + p {
   margin-top: 0.15rem;   /* 上外边距，按需调整（0 ~ 0.6rem） */
-  margin-left: 25px;     /* 保持与其它条目一致的缩进 */
+  margin-left: 15px;     /* 保持与其它条目一致的缩进 */
 }
 
 /* 邮箱颜色 */
@@ -178,8 +187,6 @@ body {
 }
 
 
-
-
 /* 导航栏 */
 /* 导航栏容器 */
 .navbar {
@@ -187,7 +194,7 @@ body {
   gap: 20px;
   position: fixed;       /* 改为 fixed*/
   top: 0;                /* 距离浏览器顶部 0*/
-  left: 300px;           /* 给左侧栏宽度留出空间*/
+  left: 380px;           /* 给左侧栏宽度留出空间*/
   right: 0;              /* 右侧延伸到页面右边*/
   padding: 10px 20px;
   border: 2px solid adjust-color($primary, $lightness: 80%); /* 已替换 */
@@ -272,4 +279,64 @@ section h2 {
   border-left: 4px solid $primary;
   padding-left: 8px;
   margin-bottom: 15px;
+}
+
+section h3 {
+  padding-left: 8px;
+  margin-bottom: 15px;
+  font-size: 1.35em;
+}
+
+.toggle-item {
+  font-size: 1.2em;           /* 比正文大一号 */
+  font-weight: bold;
+  color: rgb(14, 42, 124); /* 蓝色字体 */
+  cursor: pointer;
+  list-style: none;           /* 不显示圆点 */
+  margin-top: 5px;
+}
+
+.toggle-item:hover {
+  text-decoration: underline; /* 悬停时下划线 */
+}
+
+.media-grid {
+  display: flex;               /* 横向排列 */
+  gap: 0px;                   /* 元素之间间距 */
+  margin-top: 15px;
+}
+
+.media-item {
+  flex: 1;                     /* 平分宽度 */
+  text-align: center;
+}
+
+.media-item video {
+  width: 90%;      /* 或固定值，例如 300px */
+  height: auto;     /* 自动保持比例 */
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.media-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;          /* 圆角，可选 */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* 阴影，可选 */
+}
+
+.caption {
+  margin-top: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+#projects h3 {
+  margin-top: 20px;  /* h3 和上面元素之间的距离 */
+  margin-bottom: 15px; /* h3 和下面文字/媒体之间的距离 */
+}
+
+#projects h3:not(:first-of-type) {
+  margin-top: 60px; /* 只有从第二个 h3 开始才设置上间距 */
 }
