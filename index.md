@@ -134,7 +134,7 @@ title: "Ruohan Wang"
 <section id="cv">
   <h2>Curriculum Vitae</h2>
   <p>
-    Download my CV here: <a href="/files/RuohanWang_CV_240512.pdf" target="_blank">CV (PDF)</a>
+    <a href="{{ '/files/RuohanWang_CV_240512.pdf' | relative_url }}" target="_blank">CV (PDF)</a>
   </p>
   <h3>Education</h3>
   <ul>
