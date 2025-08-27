@@ -194,11 +194,19 @@ body {
   border-radius: 8px;
   background-color: adjust-color($primary, $lightness: 70%); /* 已替换 */
   z-index: 100;          /* 保证覆盖右侧内容*/
+
+  /* 关键：允许当内容超出时横向滚动（移动端可滑动）*/
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;   /* 禁止换行，使用横向滚动 */
+  align-items: center;
 }
 
 
 /* 每个导航项 */
 .navbar a {
+  flex: 0 0 auto;        /* 不收缩，不自动换行，保持 inline-block 大小 */
+  display: inline-block;
   color: #969c9f;
   text-decoration: none;
   font-weight: bold;
@@ -206,16 +214,46 @@ body {
   padding: 8px 65px;            /* 上下8px，左右16px*/
   border-radius: 4px;           /* 每个文字小圆角*/
   transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
 }
 
 /* 鼠标悬停效果 */
 .navbar a:hover {
   background-color: #e0e0e0;    /* 灰色背景*/
   color: $text;                 /* 悬停文字颜色*/
+  text-decoration: underline;
 }
 
 .navbar a:hover {
   text-decoration: underline;
+}
+
+/* 响应式：窄屏时把侧栏改为流式，主内容移回，导航占满上方并适当缩小间距 */
+@media (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-top: 110px; /* 给导航预留高度 */
+  }
+
+  .navbar {
+    left: 0;
+    right: 0;
+    margin: 10px;
+    border-radius: 6px;
+    padding: 6px 8px;
+  }
+
+  .navbar a {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
 }
 
 /* 每个栏目 */
