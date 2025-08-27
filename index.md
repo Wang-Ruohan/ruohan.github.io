@@ -134,12 +134,12 @@ title: "Ruohan Wang"
 <section id="cv">
   <h2>Curriculum Vitae</h2>
   <p>
-    Download my CV here: <a href="{{ '/files/CV.pdf' | relative_url }}" target="_blank">CV (PDF)</a>
+    Download my CV here: <a href="/files/RuohanWang_CV_240512.pdf" target="_blank">CV (PDF)</a>
   </p>
   <h3>Education</h3>
   <ul>
-    <li>Ph.D. in School of Mechanical Engineering, Zhejiang University. [2021-Now]</li>
-    <li>B.Eng. in [Field], [University], [Year]</li>
+    <li>Ph.D. in School of Mechanical Engineering, Zhejiang University. <b>[2021-Now]</b></li>
+    <li>B.Eng. in School of Mechanical and Electronic Control Engineering，Beijing Jiaotong University. <b>[2017-2021]</b></li>
   </ul>
 
   <h3>Experience</h3>
