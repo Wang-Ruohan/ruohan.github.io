@@ -75,9 +75,9 @@ title: "Ruohan Wang"
 
 </style>
 
-
 <section id="about">
-  <h2>About Me</h2>
+  <h2 style="display:flex;align-items:center;gap:8px;line-height:1;padding-bottom:2px;position:relative;"><svg width="50" height="26" viewBox="0 0 50 26" style="vertical-align:middle;"><polygon points="0,0 22,0 36,26 0,26" fill="#1e4e8c"/><polygon points="22,0 33,0 44,26 33,26" fill="#50a6f1ff"/></svg>About Me<span style="position:absolute;bottom:0;left:0;width:180px;height:2px;background:#cbced1ff;"></span></h2>
+
   <p style="font-size: 18px; line-height: 1;">
     Hello, I'm Ruohan.
   </p>
@@ -90,13 +90,13 @@ title: "Ruohan Wang"
 </section>
 
 <section id="news">
-  <h2>News</h2>
+  <h2 style="display:flex;align-items:center;gap:8px;line-height:1;padding-bottom:2px;position:relative;"><svg width="50" height="26" viewBox="0 0 50 26" style="vertical-align:middle;"><polygon points="0,0 22,0 36,26 0,26" fill="#1e4e8c"/><polygon points="22,0 33,0 44,26 33,26" fill="#50a6f1ff"/></svg>News<span style="position:absolute;bottom:0;left:0;width:130px;height:2px;background:#cbced1ff;"></span></h2>
   <ul id="news-list">
-    <li><span class="emphasis">2025-07</span>: Our paper has recevied <span class="emphasis"> IEEE IES Students & Young Professionals Assistance Awrad</span> in <a href="https://indin2025.ieee-ies.org/#/home" style="color: rgba(74, 152, 230, 1); font-weight: bold;font-family: 'Georgia'" target="_blank">INDIN 2025</a>.</li>
-    <li><span class="emphasis">2025-06</span>: Paper accepted by <a href="https://www.iros25.org/" style="color: rgba(74, 152, 230, 1); font-weight: bold;font-family: 'Georgia'" target="_blank">IROS 2025</a> on robot shared control.</li>
+    <li><span class="emphasis">2025-07</span>: Our paper has recevied <span class="emphasis"> IEEE IES Students & Young Professionals Assistance Awrad</span> in <a href="https://indin2025.ieee-ies.org/#/home" style="color: #1e4e8c; font-weight: bold;font-family: 'Georgia'" target="_blank">INDIN 2025</a>.</li>
+    <li><span class="emphasis">2025-06</span>: Paper accepted by <a href="https://www.iros25.org/" style="color: #1e4e8c; font-weight: bold;font-family: 'Georgia'" target="_blank">IROS 2025</a> on robot shared control.</li>
     <li><span class="emphasis">2024-09</span>: I won the honor of Outstanding Graduate Student in 2023-2024 semester.</li>
     <li><span class="emphasis">2024-08</span>:  We won the <span class="emphasis"> Second Prize </span> in <i>Mingshi Cup</i>, the 5th Wiener Sensing Technology and Intelligent Application Competition.</li>
-    <li><span class="emphasis">2024-06</span>: Our paper has recevied <span class="emphasis"> IEEE IES Students & Young Professionals Assistance Awrad</span> in <a href="https://ieee-isie-2024.org/" style="color: rgba(74, 152, 230, 1); font-weight: bold;font-family: 'Georgia'" target="_blank">ISIE 2024</a>.</li>
+    <li><span class="emphasis">2024-06</span>: Our paper has recevied <span class="emphasis"> IEEE IES Students & Young Professionals Assistance Awrad</span> in <a href="https://ieee-isie-2024.org/" style="color: #1e4e8c; font-weight: bold;font-family: 'Georgia'" target="_blank">ISIE 2024</a>.</li>
     <li><span class="emphasis">2024-06</span>:  We won the <span class="emphasis"> First Prize </span> of Hangzhou and Xiamen Region in <i>Huawei Light Chaser</i>, the Embedded Software Design Competition.</li>
     <li><span class="emphasis">2023-09</span>: I won the honor of Outstanding Graduate Student in 2022-2023 semester.</li>
     <li><span class="emphasis">2023-08</span>:  We won the <span class="emphasis"> First Prize </span> in <i>Zhaoyi Innovation Cup</i>, the 18th China Postgraduate Electronic Design Competition.</li>
@@ -142,7 +142,7 @@ title: "Ruohan Wang"
 </script>
 
 <section id="publications">
-  <h2>Publications</h2>
+  <h2 style="display:flex;align-items:center;gap:8px;line-height:1;padding-bottom:2px;position:relative;"><svg width="50" height="26" viewBox="0 0 50 26" style="vertical-align:middle;"><polygon points="0,0 22,0 36,26 0,26" fill="#1e4e8c"/><polygon points="22,0 33,0 44,26 33,26" fill="#50a6f1ff"/></svg>Publications<span style="position:absolute;bottom:0;left:0;width:210px;height:2px;background:#cbced1ff;"></span></h2>
 
   <h3>Journal</h3>
   <ol>
@@ -211,7 +211,7 @@ title: "Ruohan Wang"
 </section>
 
 <section id="cv">
-  <h2>Curriculum Vitae</h2>
+  <h2 style="display:flex;align-items:center;gap:8px;line-height:1;padding-bottom:2px;position:relative;"><svg width="50" height="26" viewBox="0 0 50 26" style="vertical-align:middle;"><polygon points="0,0 22,0 36,26 0,26" fill="#1e4e8c"/><polygon points="22,0 33,0 44,26 33,26" fill="#50a6f1ff"/></svg>Curriculum Vitae<span style="position:absolute;bottom:0;left:0;width:260px;height:2px;background:#cbced1ff;"></span></h2>
   <p>
     <ol><li> See <a href="https://wang-ruohan.github.io/ruohan.github.io/files/RuohanWang_CV_240512.pdf" target="_blank">Ruohan-CV240512 (PDF)</a></li></ol>
   </p>
@@ -223,7 +223,7 @@ title: "Ruohan Wang"
 </section>
 
 <section id="projects">
-  <h2>Projects</h2>
+  <h2 style="display:flex;align-items:center;gap:8px;line-height:1;padding-bottom:2px;position:relative;"><svg width="50" height="26" viewBox="0 0 50 26" style="vertical-align:middle;"><polygon points="0,0 22,0 36,26 0,26" fill="#1e4e8c"/><polygon points="22,0 33,0 44,26 33,26" fill="#50a6f1ff"/></svg>Projects<span style="position:absolute;bottom:0;left:0;width:160px;height:2px;background:#cbced1ff;"></span></h2>
   <h3>Advancing Teleoperated Robot's Interaction Safety</h3>
   <ol>
     <li>This project develops a teleoperated shared-control framework for homecare robots using a lightweight exoskeleton. Operator commands are combined with real-time proximity sensing to avoid collisions, while force feedback allows intuitive perception of contacts. Comparative experiments demonstrate that this strategy effectively enhances safety and reliability in tele-homecare scenarios. <a href="https://" target="_blank" style="color: rgba(74, 152, 230, 1); font-weight: bold;">[PAPER]</a></li>
@@ -233,17 +233,17 @@ title: "Ruohan Wang"
   <div class="media-grid">
     <!-- 视频或图片1 -->
     <div class="media-item">
-      <video src="videos/IROS2025-video1.mp4" autoplay loop muted playsinline></video>
+      <video src="videos/IROS2025-video1.mp4" controls></video>
       <p class="caption">Exoskeleton for Teleoperation</p>
     </div>
     <!-- 视频或图片2 -->
     <div class="media-item">
-      <video src="videos/IROS2025-video2.mp4" autoplay loop muted playsinline></video>
+      <video src="videos/IROS2025-video2.mp4" controls></video>
       <p class="caption">Robot Shared Control</p>
     </div>
     <!-- 视频或图片3 -->
     <div class="media-item">
-      <video src="videos/IROS2025-video3.mp4" autoplay loop muted playsinline></video>
+      <video src="videos/IROS2025-video3.mp4" controls></video>
       <p class="caption">Robot Shared Control</p>
     </div>
   </div>
@@ -261,7 +261,7 @@ title: "Ruohan Wang"
   <div class="media-grid">
     <div class="media-item">
       <video src="videos/RAL2-video1.mp4"
-            autoplay loop muted playsinline
+            controls
             style="width:940px; height:auto;"></video>
       <p class="caption">Needle Threading Under Random Interference</p>
     </div>
@@ -276,7 +276,7 @@ title: "Ruohan Wang"
   <div class="media-grid">
     <div class="media-item">
       <video src="videos/RAL1-video1.mp4"
-            autoplay loop muted playsinline
+            controls 
             style="width:520px; height:auto;"></video>
       <p class="caption">Exoskeleton for Teleoperation</p>
     </div>
@@ -294,7 +294,7 @@ title: "Ruohan Wang"
 
 
 <section id="talks">
-  <h2>Talks</h2>
+  <h2 style="display:flex;align-items:center;gap:8px;line-height:1;padding-bottom:2px;position:relative;"><svg width="50" height="26" viewBox="0 0 50 26" style="vertical-align:middle;"><polygon points="0,0 22,0 36,26 0,26" fill="#1e4e8c"/><polygon points="22,0 33,0 44,26 33,26" fill="#50a6f1ff"/></svg>Records<span style="position:absolute;bottom:0;left:0;width:180px;height:2px;background:#cbced1ff;"></span></h2>
   <ul>
     <li><b>2025</b>: <i>Safe Teleoperation for Homecare Robots</i>, Invited Talk at International Robotics Symposium.</li>
     <li><b>2024</b>: <i>Task-Adaptive Grasping with Dual-Arm Robots</i>, Seminar at [University].</li>

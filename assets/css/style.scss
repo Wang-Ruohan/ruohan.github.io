@@ -177,30 +177,36 @@ body {
 }
 
 
-
 /* 右侧内容 */
 .main-content {
   flex: 1;
   margin-left: 300px;    /*  给左侧栏留出空间*/
-  padding: 70px 30px 30px 30px;  /*  顶部 padding 留出导航栏高度*/
-  overflow-y: auto;
+  padding: 10px 30px 30px 30px;  /*  顶部 padding 留出导航栏高度*/
+  // overflow-y: auto;
 }
 
 
 /* 导航栏 */
 /* 导航栏容器 */
+
+.header-logo {
+  width: 100%;
+  max-height: 220px; /* 控制图片高度 */
+  display: block;
+}
+
 .navbar {
   display: flex;
   gap: 20px;
-  position: fixed;       /* 改为 fixed*/
-  top: 0;                /* 距离浏览器顶部 0*/
-  left: 380px;           /* 给左侧栏宽度留出空间*/
-  right: 0;              /* 右侧延伸到页面右边*/
+  position: sticky; /* 固定在顶部 */
+  top: 0px;                /* 距离浏览器顶部 0*/
+  // left: 380px;           /* 给左侧栏宽度留出空间*/
+  // right: 0;              /* 右侧延伸到页面右边*/
   padding: 10px 20px;
   border: 2px solid adjust-color($primary, $lightness: 80%); /* 已替换 */
   border-radius: 8px;
-  background-color: adjust-color($primary, $lightness: 70%); /* 已替换 */
-  z-index: 100;          /* 保证覆盖右侧内容*/
+  background-color: rgb(233, 233, 233); /* 已替换 */
+  z-index: 1000;          /* 保证覆盖右侧内容*/
 
   /* 关键：允许当内容超出时横向滚动（移动端可滑动）*/
   overflow-x: auto;
@@ -214,7 +220,7 @@ body {
 .navbar a {
   flex: 0 0 auto;        /* 不收缩，不自动换行，保持 inline-block 大小 */
   display: inline-block;
-  color: #969c9f;
+  color: #1c1b1a;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.3rem;            /* 字体变大*/
@@ -226,7 +232,7 @@ body {
 
 /* 鼠标悬停效果 */
 .navbar a:hover {
-  background-color: #e0e0e0;    /* 灰色背景*/
+  background-color: #f4cfab;    /* 灰色背景*/
   color: $text;                 /* 悬停文字颜色*/
   text-decoration: underline;
 }
@@ -275,11 +281,37 @@ section p {
 }
 
 section h2 {
-  color: $primary;
-  border-left: 4px solid $primary;
-  padding-left: 8px;
+  color: #333;
+  padding-left: 0px;
   margin-bottom: 15px;
+  gap: 10px; 
+  display: flex;
+  background-color: transparent; /* 确保 h2 没有白色背景 */
 }
+
+// section h2::before {
+//   content: '';
+//   position: relative;
+//   left: -20px;  
+//   display: inline-block;
+//   width: 50px;
+//   height: 24px;
+//   background-color: $primary;
+//   // background-color: #ff8800;
+//   /* clip-path定义梯形形状 */
+//   clip-path: polygon(10% 10%, 70% 10%, 100% 100%, 10% 100%);
+// }
+// section h2::after {
+//   content: '';
+//   position: relative;
+//   left: -180px;  /* 相对于梯形右边稍微偏右 */
+//   top: 0;       /* 对齐梯形顶部 */
+//   width: 30px;
+//   height: 24px;
+//   background-color: #ff8800;  /* 平行四边形颜色，可调整 */
+//   /* clip-path 定义平行四边形：左右平行，上下平行偏移形成倾斜 */
+//   clip-path: polygon(10% 10%, 50% 10%, 100% 100%, 60% 100%);
+// }
 
 section h3 {
   padding-left: 8px;
