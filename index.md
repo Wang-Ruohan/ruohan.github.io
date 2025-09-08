@@ -92,6 +92,7 @@ title: "Ruohan Wang"
 <section id="news">
   <h2 style="display:flex;align-items:center;gap:8px;line-height:1;padding-bottom:2px;position:relative;"><svg width="50" height="26" viewBox="0 0 50 26" style="vertical-align:middle;"><polygon points="0,0 22,0 36,26 0,26" fill="#1e4e8c"/><polygon points="22,0 33,0 44,26 33,26" fill="#50a6f1ff"/></svg>News<span style="position:absolute;bottom:0;left:0;width:130px;height:2px;background:#cbced1ff;"></span></h2>
   <ul id="news-list">
+    <li><span class="emphasis">2025-09</span>: My work-in-procees paper is accepted by <a href="https://sites.google.com/view/ssa-hri/2025-ssa" style="color: #1e4e8c; font-weight: bold;font-family: 'Georgia'" target="_blank">IROS 2025 Workshop-SSA</a> on avatar robot.</li>
     <li><span class="emphasis">2025-07</span>: Our paper has recevied <span class="emphasis"> IEEE IES Students & Young Professionals Assistance Awrad</span> in <a href="https://indin2025.ieee-ies.org/#/home" style="color: #1e4e8c; font-weight: bold;font-family: 'Georgia'" target="_blank">INDIN 2025</a>.</li>
     <li><span class="emphasis">2025-06</span>: Paper accepted by <a href="https://www.iros25.org/" style="color: #1e4e8c; font-weight: bold;font-family: 'Georgia'" target="_blank">IROS 2025</a> on robot shared control.</li>
     <li><span class="emphasis">2024-09</span>: I won the honor of Outstanding Graduate Student in 2023-2024 semester.</li>
